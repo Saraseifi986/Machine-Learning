@@ -1,1 +1,35 @@
+Diabetes Prediction Using Decision Tree Classifier
+This project aims to predict the likelihood of diabetes in patients based on several medical attributes using a Decision Tree Classifier.
+The dataset used for this analysis is the Pima Indians Diabetes Database from Kaggle, which contains various medical 
+records for 768 patients, with each record classified as either diabetic (1) or non-diabetic (0).
 
+The features used in this model include:
+
+Pregnancies
+Glucose levels
+Blood Pressure
+Skin Thickness
+Insulin levels
+BMI
+Diabetes Pedigree Function
+Age
+Project Workflow:
+Data Loading and Preprocessing: The dataset is loaded using Pandas, and the features are selected for training the model. The dataset is
+then split into training and testing sets using train_test_split.
+
+Model Training: A Decision Tree Classifier is built using the training data. The model is trained using the Gini Index as the splitting
+criterion and a maximum depth of 3 for the tree.
+
+Model Evaluation: The model's performance is evaluated using accuracy on both the training and testing sets. The accuracy of the model on the training data 
+is 76.35%, and the accuracy on the test data is 75.76%.
+
+Feature Importance and Visualization: The decision tree model identifies the most important features that contribute to predicting diabetes, and the trained 
+tree is visualized using Graphviz.
+
+Technologies Used:
+Python: For coding and model implementation.
+Scikit-Learn: For building the Decision Tree Classifier and model evaluation.
+Pandas: For data manipulation and preprocessing.
+Graphviz and Pydotplus: For visualizing the decision tree structure.
+This project provides an easy-to-understand example of how decision trees can be used to classify medical conditions based on patient data. 
+It is a useful model for understanding the relationships between different medical attributes and the likelihood of diabetes.
