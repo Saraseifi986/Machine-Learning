@@ -1,1 +1,22 @@
+Random Forest Regression for Boston Housing Price Prediction
+This project focuses on using a Random Forest Regressor to predict housing prices based on various features from the Boston Housing Dataset. 
+The goal of this analysis is to build a robust model that predicts the price of homes in the Boston area based on features like crime rate, 
+number of rooms, and access to highways, among others.
 
+The project begins by loading the Boston Housing dataset, which contains 13 features influencing housing prices. The features include crime rates, 
+residential land zoning, property tax rate, and more. The target variable is the median price of homes in thousands of dollars.
+
+The dataset is split into training and testing sets using the train_test_split function, with 70% of the data used for training and 30% for testing. 
+A Random Forest Regressor with 300 estimators (trees) is then trained on the training set. The model's performance is evaluated 
+using Mean Squared Error (MSE) and R-squared scores. On the training set, the model achieves a MSE of 1.59 and an R-squared score of 0.98,
+indicating strong predictive performance. On the test set, the model achieves a MSE of 13.13 and an R-squared score of 0.83, showing that the model generalizes
+well to unseen data.
+
+The feature importances are also calculated to determine which variables have the most influence on housing prices. The number of rooms per dwelling and the
+percentage of lower-status population appear to be the most significant factors in predicting housing prices.
+
+The project is implemented using Python and key libraries such as Scikit-learn for model building, Pandas for data handling, and NumPy for numerical operations.
+
+This analysis provides a clear example of how Random Forest regression can be applied to predict continuous values, such as housing prices, based on multiple 
+input features.
+The model's high performance demonstrates its utility in handling complex datasets with nonlinear relationships.
