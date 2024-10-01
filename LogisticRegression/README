@@ -1,1 +1,24 @@
 
+Logistic Regression Model for Iris Species Classification
+This project implements a Logistic Regression model to classify species from the famous Iris dataset. The dataset consists of 150 samples from three species
+of Iris flowers: Iris-setosa, Iris-versicolor, and Iris-virginica. The features used for classification are sepal length, sepal width, petal length,
+and petal width.
+
+Workflow:
+Data Preprocessing: The Iris dataset is loaded and split into feature variables (sepal and petal measurements) and target labels (species). 
+The target labels are encoded using LabelEncoder for use in the Logistic Regression model.
+Training and Testing Split: The dataset is split into training (80%) and testing (20%) sets using the train_test_split function from Scikit-learn.
+Model Training: A Logistic Regression model is trained using the training data. The model's performance is evaluated on both the training and testing sets.
+Evaluation: The model's accuracy is calculated, and the F1-score, precision, recall, and confusion matrix are used to assess performance on the classification
+task. The model achieves an accuracy of 96.67% on the training set and 93.33% on the test set.
+Visualization: Heatmaps of the confusion matrix for both the training and test sets are generated using Seaborn to visually
+represent the model's classification performance.
+Key Technologies:
+Python
+Pandas for data manipulation
+Scikit-learn for model building, evaluation, and splitting data
+Matplotlib and Seaborn for data visualization
+This project demonstrates how Logistic Regression can be applied to a multi-class classification problem, providing valuable insights into the 
+relationship between the features of the Iris dataset and species classification. The model is simple yet effective for educational purposes and serves as a
+foundation for more complex 
+classification algorithms.
