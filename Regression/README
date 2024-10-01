@@ -1,1 +1,18 @@
+Regression Model for Sales Prediction Using Advertising Data
+This project aims to predict sales based on advertising spend across three channels: TV, radio, and newspaper. Using Python and the Scikit-Learn library, 
+multiple regression models, including Linear Regression, Ridge, and Lasso, are applied to explore the relationships between advertising expenditure and sales,
+and to build predictive models.
 
+The dataset contains 200 rows with four columns: TV, radio, newspaper (advertising spend in each channel), and sales (dependent variable). 
+The project implements polynomial feature generation to explore higher-order relationships and compares the performance of different models.
+
+Key steps in the analysis include:
+
+Data Preprocessing: The dataset is cleaned, and features are prepared for model training.
+Model Training: Linear Regression, Ridge, and Lasso models are trained using the advertising data.
+Evaluation Metrics: Models are evaluated using R-squared and mean absolute error on both the training and testing sets to assess performance.
+The results demonstrate that the sixth-degree polynomial regression model achieves the best performance, with an R-squared value of 0.9986 on the training set
+and a mean absolute error of 0.5 on the test set.
+
+Technologies used include Python, Scikit-Learn, Pandas, and Matplotlib for model training, evaluation, and data visualization. The project offers insights
+into the effectiveness of advertising spend on sales and provides a robust predictive model for future sales predictions.
