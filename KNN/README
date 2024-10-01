@@ -1,1 +1,27 @@
+K-Nearest Neighbors (KNN) Classifier for Social Network Ads Dataset
+This project focuses on applying the K-Nearest Neighbors (KNN) algorithm to classify users from a Social Network Ads dataset to predict whether or not
+they purchased a product. The dataset consists of demographic features such as age, gender, estimated salary, and a binary variable indicating whether the
+user made a purchase.
 
+The main objective of this project is to build a KNN classification model to predict user purchase behavior based on their age, gender, and estimated salary. 
+The workflow begins with data preprocessing, where the dataset is loaded and cleaned using Pandas. Categorical variables such as gender are encoded
+using LabelEncoder to convert
+them into numerical values for the KNN model. Additionally, the features (age, estimated salary, and gender) are normalized using StandardScaler to ensure
+optimal performance of the KNN algorithm.
+
+After preprocessing, the dataset is split into training and test sets using the train_test_split function, with 80% of the data reserved for training and 20%
+for testing. The KNN classifier is trained on the training data, with K-Fold cross-validation used to evaluate the model across different subsets of the 
+training data. The classifier is set to use five nearest neighbors.
+
+The model's performance is then evaluated using accuracy scores and a confusion matrix. The KNN classifier achieves an average accuracy of 91.56% after 
+cross-validation. A confusion matrix is created to assess the true positive, true negative, false positive, and false negative rates, providing insight into
+the model’s classification performance. Additionally, scatter plots are generated to visualize decision boundaries, demonstrating how the KNN model classifies
+users based on their age and salary. A comparison between the model’s ground truth and its predictions is also displayed to highlight its effectiveness.
+
+The project uses Python for data manipulation and model building, while Pandas is used for loading and preprocessing the dataset. Scikit-learn is employed
+for implementing the KNN algorithm, data splitting, cross-validation, and model evaluation. Seaborn and Matplotlib are used to visualize the dataset,
+decision boundaries, and the confusion matrix.
+
+This project illustrates how KNN can be applied to a binary classification problem in a social network context. It provides a comprehensive understanding 
+of how demographic features influence purchasing behavior and demonstrates the effectiveness of KNN as a classification model through high accuracy and 
+visually clear decision boundaries.
