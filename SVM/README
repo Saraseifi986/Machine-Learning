@@ -1,1 +1,28 @@
+Support Vector Machine (SVM) for Iris Species Classification
+This project applies a Support Vector Machine (SVM) to classify species in the famous Iris dataset. The dataset contains 150 samples from
+three Iris species: Iris-setosa, Iris-versicolor, and Iris-virginica. Each sample is described by four features: sepal length, sepal width, petal length, 
+and petal width.
+
+The workflow starts with loading the Iris dataset, which is split into training and testing sets using the train_test_split function, with 80% of the data
+used for training and 20% for testing. The goal is to classify the species of the Iris flower based on the provided features.
+
+The first model is built using the linear kernel in the SVM algorithm. After training the model, the performance is evaluated using the confusion matrix 
+and the classification report. The linear kernel SVM achieves an accuracy of 98.67%, with a perfect classification across all species in the test set,
+as shown by a 100% precision, recall, and F1-score for each class.
+
+The project also explores other kernel functions, such as the radial basis function (rbf) and the sigmoid kernel, comparing their performance with the
+linear kernel. Visualizations of the dataset are generated using Seaborn’s pairplot, which highlights the separability of the species based on petal and 
+sepal measurements.
+
+In this project, Scikit-learn is used for the SVM implementation and model evaluation, while Pandas is employed for data handling. Seaborn and Matplotlib 
+are utilized for visualizing the dataset and performance metrics.
+
+The project provides a clear demonstration of how SVM can effectively handle multi-class classification tasks such as the Iris dataset, achieving high
+accuracy and providing interpretable visualizations.
+
+
+
+
+
+
 
