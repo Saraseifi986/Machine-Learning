@@ -1,1 +1,22 @@
+Time Series Analysis of Daily Maximum Temperatures Using ARIMA and SARIMA Models
 
+This project focuses on time series analysis and forecasting of daily maximum temperatures using the ARIMA and SARIMA models. 
+The dataset contains temperature records from January 1, 1981, to December 31, 1990. The goal is to analyze historical temperature data, test for stationarity,
+and build models to forecast future temperatures.
+
+The workflow begins with loading the dataset into a Pandas DataFrame, followed by data visualization to understand the time series trends.
+Monthly averages of daily temperatures are calculated and visualized to identify patterns in the data. Seasonal decomposition is applied to the data to
+separate it into trend, seasonal, and residual components, providing insights into the underlying structure of the temperature variations.
+
+A stationarity test using the Dickey-Fuller test is conducted to check if the data is stationary, a requirement for time series modeling. 
+The test indicates that the raw data is non-stationary, and differencing is applied to achieve stationarity. Various transformations, such as logarithmic 
+and square root transformations, are explored to further stabilize the variance in the data.
+
+The ARIMA model is applied to the training data, with the best-fit model chosen based on the Akaike Information Criterion (AIC). 
+The SARIMA model is also explored, which incorporates both seasonal and non-seasonal elements to better capture periodic patterns in the temperature data.
+
+The accuracy of the models is evaluated using the Mean Absolute Percentage Error (MAPE), and predictions are made for the test set.
+Both ARIMA and SARIMA models are used to forecast future temperatures beyond the dataset range, providing insights into temperature trends for the next year.
+
+Key technologies used include Python, Pandas, Matplotlib, and Seaborn for data handling and visualization, as well as Statsmodels for implementing
+the ARIMA and SARIMA models. The project demonstrates how to apply advanced time series modeling techniques to real-world data for forecasting future trends.
